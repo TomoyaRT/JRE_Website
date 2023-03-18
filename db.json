@@ -1,0 +1,25 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Article Title 01",
+      "description": "lorem ipsum dolor sit amet, consectetur adip",
+      "date": "2023/03/17",
+      "image": "/shark.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Article Title 02",
+      "description": "lorem ipsum dolor sit amet, consectetur adip",
+      "date": "2023/03/17",
+      "image": "/shark.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Article Title 03",
+      "description": "lorem ipsum dolor sit amet, consectetur adip",
+      "date": "2023/03/17",
+      "image": "/shark.jpg"
+    }
+  ]
+}
