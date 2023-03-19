@@ -1,16 +1,9 @@
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-
-type Post = {
-  id: number
-  title: string
-  description: string
-  date: string
-  image: string
-}
+import type { Post as PostType } from '@/types'
 
 interface Props {
-  post: Post
+  post: PostType
 }
 
 function Post({ post }: Props) {
@@ -18,7 +11,7 @@ function Post({ post }: Props) {
 
   function clickHandler(id: number) {
     router.push({
-      pathname: '/blog/[id]',
+      pathname: post.path,
       query: { id },
     })
   }
@@ -26,7 +19,7 @@ function Post({ post }: Props) {
   return (
     <>
       <div
-        className="border max-w-[300px] rounded-2xl mr-5 p-4 cursor-pointer"
+        className="border max-w-[300px] rounded-2xl mr-5 mb-5 p-4 cursor-pointer"
         onClick={() => clickHandler(post.id)}
       >
         <Image

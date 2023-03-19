@@ -9,7 +9,7 @@ interface Props {
   post: PostType
 }
 
-function BlogPage(props: Props) {
+function SSGPage(props: Props) {
   const { post } = props
 
   const router = useRouter()
@@ -23,7 +23,7 @@ function BlogPage(props: Props) {
         <div className="border max-w-[300px] rounded-2xl mr-5 p-4 cursor-pointer">
           <Image
             className="rounded-2xl"
-            src="/react.png"
+            src={post.image}
             alt="Picture of the author"
             width={300}
             height={200}
@@ -48,7 +48,7 @@ async function getData() {
 
 export async function getStaticPaths() {
   const data = await getData()
-  const ids = data.posts.map((post: PostType) => post.id)
+  const ids = data.shinchanList01.map((post: PostType) => post.id)
   const pathsWithParams = ids.map((id: number) => ({
     params: { id: String(id) },
   }))
@@ -63,10 +63,9 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const { params } = context
   const id = Number(params?.id)
   const data = await getData()
-  const posts = data.posts
+  const posts = data.shinchanList01
 
   const post = posts.find((post: PostType) => post.id === id)
-
   if (!post) return { notFound: true }
 
   return {
@@ -76,4 +75,4 @@ export const getStaticProps: GetStaticProps = async (context) => {
   }
 }
 
-export default BlogPage
+export default SSGPage

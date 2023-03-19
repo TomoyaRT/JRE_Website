@@ -1,21 +1,15 @@
 import Link from 'next/link'
 
-function Navbar() {
-  const routes = [
-    {
-      path: '/',
-      name: 'Home',
-    },
-    {
-      path: '/blog',
-      name: 'Blog',
-    },
-    {
-      path: '/portfolio',
-      name: 'Portfolio',
-    },
-  ]
+type RouteType = {
+  path: string
+  name: string
+}
 
+interface Props {
+  routes: RouteType[]
+}
+
+function Navbar({ routes }: Props) {
   return (
     <nav>
       <ul className="flex justify-end items-center">

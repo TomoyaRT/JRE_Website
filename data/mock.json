@@ -5,21 +5,92 @@
       "title": "Article Title 01",
       "description": "lorem ipsum dolor sit amet, consectetur adip",
       "date": "2023/03/17",
-      "image": "/shark.jpg"
+      "image": "/shark.jpg",
+      "path": "/blog/[id]"
     },
     {
       "id": 2,
       "title": "Article Title 02",
       "description": "lorem ipsum dolor sit amet, consectetur adip",
       "date": "2023/03/17",
-      "image": "/shark.jpg"
+      "image": "/shark.jpg",
+      "path": "/blog/[id]"
     },
     {
       "id": 3,
       "title": "Article Title 03",
       "description": "lorem ipsum dolor sit amet, consectetur adip",
       "date": "2023/03/17",
-      "image": "/shark.jpg"
+      "image": "/shark.jpg",
+      "path": "/blog/[id]"
+    }
+  ],
+  "shinchanList01": [
+    {
+      "id": 1,
+      "title": "Title 01",
+      "description": "lorem ipsum dolor sit amet, consectetur adip",
+      "date": "2023/03/17",
+      "image": "/Shinchan01.jpg",
+      "path": "/nextjs-demo/ssg/[id]"
+    },
+    {
+      "id": 2,
+      "title": "Title 02",
+      "description": "lorem ipsum dolor sit amet, consectetur adip",
+      "date": "2023/03/17",
+      "image": "/Shinchan01.jpg",
+      "path": "/nextjs-demo/ssg/[id]"
+    },
+    {
+      "id": 3,
+      "title": "Title 03",
+      "description": "lorem ipsum dolor sit amet, consectetur adip",
+      "date": "2023/03/17",
+      "image": "/Shinchan01.jpg",
+      "path": "/nextjs-demo/ssg/[id]"
+    },
+    {
+      "id": 4,
+      "title": "Title 04",
+      "description": "lorem ipsum dolor sit amet, consectetur adip",
+      "date": "2023/03/17",
+      "image": "/Shinchan01.jpg",
+      "path": "/nextjs-demo/ssg/[id]"
+    }
+  ],
+  "shinchanList02": [
+    {
+      "id": 1,
+      "title": "Title 01",
+      "description": "lorem ipsum dolor sit amet, consectetur adip",
+      "date": "2023/03/17",
+      "image": "/Shinchan02.png",
+      "path": "/nextjs-demo/isr/[id]"
+    },
+    {
+      "id": 2,
+      "title": "Title 02",
+      "description": "lorem ipsum dolor sit amet, consectetur adip",
+      "date": "2023/03/17",
+      "image": "/Shinchan02.png",
+      "path": "/nextjs-demo/isr/[id]"
+    },
+    {
+      "id": 3,
+      "title": "Title 03",
+      "description": "lorem ipsum dolor sit amet, consectetur adip",
+      "date": "2023/03/17",
+      "image": "/Shinchan02.png",
+      "path": "/nextjs-demo/isr/[id]"
+    },
+    {
+      "id": 4,
+      "title": "Title 04",
+      "description": "lorem ipsum dolor sit amet, consectetur adip",
+      "date": "2023/03/17",
+      "image": "/Shinchan02.png",
+      "path": "/nextjs-demo/isr/[id]"
     }
   ]
 }

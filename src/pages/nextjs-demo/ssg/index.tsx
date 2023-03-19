@@ -4,18 +4,18 @@ import path from 'path'
 import type { Post as PostType } from '@/types'
 
 interface Props {
-  posts: PostType[]
+  data: PostType[]
 }
 
-function Blog(props: Props) {
-  const { posts } = props
+function SSG(props: Props) {
+  const { data } = props
 
   return (
     <>
-      <h1 className="text-[48px] text-blue-500">The Blog Page</h1>
+      <h1 className="text-3xl text-green-400 font-bold">The SSG Page</h1>
       <div className="flex flex-wrap">
-        {posts.map((post) => (
-          <Post key={post.id} post={post} />
+        {data.map((item) => (
+          <Post key={item.id} post={item} />
         ))}
       </div>
     </>
@@ -29,10 +29,9 @@ export async function getStaticProps() {
 
   return {
     props: {
-      posts: data.posts,
+      data: data.shinchanList01,
     },
-    revalidate: 5,
   }
 }
 
-export default Blog
+export default SSG
